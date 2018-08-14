@@ -1,6 +1,8 @@
-import fileinput
-print('hello world')
-a=10
-b=20
-print(a+b)
+
+
+projects = dict()
+employees = dict()
+tasks = dict()
+
+
 

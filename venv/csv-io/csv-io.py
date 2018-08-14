@@ -3,7 +3,7 @@ import os.path
 import shutil
 
 """
-Module crv_io.py contains functions to read and write Employees,Projects,Tasks,Teams information from/to CSV file
+Module csv_io.py contains functions to read and write Employees,Projects,Tasks,Teams information from/to CSV file
 File format is the following
 --------
 Employees.csv
@@ -20,6 +20,28 @@ Planned_Deadline (date after effective start),
 OnHold (1 - yes or 0 -  no), 
 Planned_Resume( date planned to resume after putting on hold),
 Finished (1 - yes or 0 -  no)
+---------
+Projects.csv
+
+guid  ID
+string Name
+string Owner
+string Manager
+string TechnicalLeader
+list of pointers Tasks //can be empty
+list of pointers Employees
+unsigned int RealWorkload //in days
+unsigned int PlannedLoad
+unsigned int Budget //in rubles
+unsigned int Difficulty // 1-5
+datetime RequestedStart
+datetime PlannedStart
+datetime EffectiveStart
+datetime RequestedDeadline
+datetime PlannedDeadline
+boolean OnHold
+datetime PlannedResume
+boolean Finished
 
 
 """
